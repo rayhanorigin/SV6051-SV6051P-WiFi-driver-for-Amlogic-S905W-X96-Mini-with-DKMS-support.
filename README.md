@@ -71,13 +71,6 @@ sudo modprobe ssv6051
 ip a show wlan0
 ```
 
-## 🛠️ Requirements
-
-- **System**: Armbian or Debian-based distribution
-- **Tools**: `build-essential`, `dkms`, `linux-headers-$(uname -r)`
-- **Kernel**: Modern kernels (tested on 6.18.37-ophub)
-- **Architecture**: ARM64 (aarch64)
-
 ## 📊 Verification
 
 After installation, verify the driver is working:
