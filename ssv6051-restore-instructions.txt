@@ -1,0 +1,25 @@
+===========================================
+SSV6051 WiFi Driver - DKMS Restore Guide
+===========================================
+
+1. Extract the backup:
+   sudo tar -xzf ssv6051-dkms-master-backup.tar.gz -C /usr/src
+
+2. Add to DKMS:
+   sudo dkms add -m ssv6051 -v 1.0
+
+3. Build for current kernel:
+   sudo dkms build -m ssv6051 -v 1.0
+
+4. Install:
+   sudo dkms install -m ssv6051 -v 1.0
+
+5. Load driver:
+   sudo modprobe ssv6051
+
+6. Check WiFi:
+   ip a show wlan0
+
+===========================================
+Important: This backup includes the SDIO_SLOW_CLOCK fix!
+===========================================
