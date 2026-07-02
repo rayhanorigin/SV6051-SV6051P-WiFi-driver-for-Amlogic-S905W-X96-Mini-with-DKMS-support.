@@ -2,8 +2,6 @@
 Includes the critical SDIO timing fix (-DSDIO_USE_SLOW_CLOCK) discovered by @lukas-kuna. Based on the Armbian Rockchip kernel patches from the @ophub/amlogic-s9xxx-openwrt project.
 # SV6051/SV6051P WiFi Driver for Amlogic S905W (X96 Mini)
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/rayhanorigin/SV6051-SV6051P-WiFi-driver-for-Amlogic-S905W-X96-Mini-with-DKMS-support))
-
 This driver enables WiFi on devices with the **SV6051/SV6051P** chipset, such as the **X96 Mini** (Amlogic S905W). It is based on the Armbian Rockchip kernel patches from the **@ophub/amlogic-s9xxx-openwrt** project and includes the critical fix for SDIO timing issues discovered by **@lukas-kuna**.
 
 ## 📋 The Problem & The Fix
