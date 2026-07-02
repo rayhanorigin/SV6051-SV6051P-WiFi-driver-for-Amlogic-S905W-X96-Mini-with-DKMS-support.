@@ -25,7 +25,15 @@ As discovered by [@lukas-kuna](https://github.com/lukas-kuna) in [this GitHub is
 The latest release is available here:
 - **[ssv6051-20260702.tar.gz](https://github.com/rayhanorigin/SV6051-SV6051P-WiFi-driver-for-Amlogic-S905W-X96-Mini-with-DKMS-support/releases/latest)** - Complete driver package with DKMS support
 
-## 🚀 Quick Installation
+## 🛠️ Requirements
+
+- **System**: Ubuntu or Debian-based Armbian installation.
+- **Tools**: `build-essential`, `dkms`,
+- **Kernel**: Kernel with Headers installed (won't install without headers)
+-**Headers** - Install headers using `armbian-config`, or apt
+- **Architecture**: ARM64 (aarch64)
+
+✅ Quick Installation
 
 ### Using the Release Package (Recommended)
 
@@ -71,6 +79,21 @@ sudo modprobe ssv6051
 ip a show wlan0
 ```
 
+## ⚡ Manual Installation (Without DKMS)
+```bash
+# 1. Go to the driver source
+cd ssv6051-1.0
+
+# 2. Compile the driver
+make -j$(nproc)
+
+# 3. Install the compiled module
+sudo cp ssv6051.ko /lib/modules/$(uname -r)/kernel/drivers/net/wireless/
+sudo depmod -a
+
+# 4. Load the driver
+sudo modprobe ssv6051
+```
 ## 📊 Verification
 
 After installation, verify the driver is working:
