@@ -109,7 +109,10 @@ ip a show wlan0
 sudo iw dev wlan0 scan | grep SSID:
 
 # Connect to WiFi (example with nmcli)
-sudo nmcli dev wifi connect "YOUR_SSID" password "YOUR_PASSWORD"
+sudo nmcli --ask dev wifi connect "SSID_NAME"
+
+# If you're having issues with NMTUI, use this command to add your user to netdev
+sudo usermod -aG netdev $USER
 ```
 
 ## 🙏 Credits
