@@ -44,6 +44,7 @@ wget https://github.com/rayhanorigin/SV6051-SV6051P-WiFi-driver-for-Amlogic-S905
 # Extract
 tar -xzf ssv6051-20260702.tar.gz
 cd ssv6051-20260702
+chmod +x ./restore-ssv6051.sh
 
 # Run the installer (as root)
 sudo ./restore-ssv6051.sh
@@ -54,6 +55,7 @@ sudo ./restore-ssv6051.sh
 ```bash
 git clone https://github.com/rayhanorigin/SV6051-SV6051P-WiFi-driver-for-Amlogic-S905W-X96-Mini-with-DKMS-support.git
 cd SV6051-SV6051P-WiFi-driver-for-Amlogic-S905W-X96-Mini-with-DKMS-support
+chmod +x ./restore-ssv6051.sh
 sudo ./restore-ssv6051.sh
 ```
 
