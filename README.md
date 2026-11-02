@@ -39,7 +39,7 @@ The latest release is available here:
 
 ```bash
 # Download the latest release
-wget https://github.com/rayhanorigin/SV6051-SV6051P-WiFi-driver-for-Amlogic-S905W-X96-Mini-with-DKMS-support/releases/download/1.0/ssv6051-20260702.tar.gz
+wget https://github.com/rayhanorigin/SV6051-SV6051P-WiFi-driver-for-Amlogic-S905W-X96-Mini-with-DKMS-support./releases/download/1.0/ssv6051-20260702.tar.gz
 
 # Extract
 tar -xzf ssv6051-20260702.tar.gz
